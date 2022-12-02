@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="4.css">
+
+    <title>Document</title>
+</head>
+<body>
+  <img id="cursor" src="https://media.geeksforgeeks.org/wp-content/uploads/20200319212118/cursor2.png"
+		width="15" height="20" />
+
+    <div class="page">
+  
+        <header role="banner">
+          <div class="title">navigation bar</div>
+          <div class="tagline">Using a Menubar for navigation links</div>
+        </header>
+        <nav aria-label="Mythical University">
+          <ul class="menubar-navigation" role="menubar" aria-label="Mythical University">
+            <li role="none">
+              <a role="menuitem" href="#home">
+                Home
+              </a>
+            </li>
+            <li role="none">
+              <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="#about">
+                About
+                <svg xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
+                 <polygon points="1 0, 11 0, 6 8"></polygon>
+                </svg>
+              </a>
+              <ul role="menu" aria-label="About">
+                <li role="none">
+                  <a role="menuitem" href="#overview">Overview</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#administration">Administration</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="#facts">
+                    Facts
+                    <svg xmlns="http://www.w3.org/2000/svg" class="right" width="9" height="12" viewBox="0 0 9 12">
+                     <polygon points="0 1, 0 11, 8 6"></polygon>
+                    </svg>
+                  </a>
+                  <ul role="menu" aria-label="Facts">
+                    <li role="none">
+                      <a role="menuitem" href="#history">History</a>
+                    </li>
+                    <li role="none">
+                      <a role="menuitem" href="#current-statistics">Current Statistics</a>
+                    </li>
+                    <li role="none">
+                      <a role="menuitem" href="#awards">tips</a>
+                    </li>
+                  </ul>
+                </li>
+                <li role="none">
+                  <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="#campus-tours">
+                    tricks
+                    <svg xmlns="http://www.w3.org/2000/svg" class="right" width="9" height="12" viewBox="0 0 9 12">
+                     <polygon points="0 1, 0 11, 8 6"></polygon>
+                    </svg>
+                  </a>
+                  <ul role="menu" aria-label="Campus Tours">
+                    <li role="none">
+                      <a role="menuitem" href="#for-prospective-students">For prospective</a>
+                    </li>
+                    <li role="none">
+                      <a role="menuitem" href="#for-alumni">For alumni</a>
+                    </li>
+                    <li role="none">
+                      <a role="menuitem" href="#for-visitors">For visitors</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li role="none">
+              <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="#admissions">
+                formulaire
+                <svg xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
+                 <polygon points="1 0, 11 0, 6 8"></polygon>
+                </svg>
+              </a>
+              <ul role="menu" aria-label="Admissions">
+                <li role="none">
+                  <a role="menuitem" href="#apply">Apply</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="#tuition">
+                    Tuition
+                    <svg xmlns="http://www.w3.org/2000/svg" class="right" width="9" height="12" viewBox="0 0 9 12">
+                     <polygon points="0 1, 0 11, 8 6"></polygon>
+                    </svg>
+                  </a>
+                  <ul role="menu" aria-label="Tuition">
+                    <li role="none">
+                      <a role="menuitem" href="#undergraduate">Undergraduate</a>
+                    </li>
+                    <li role="none">
+                      <a role="menuitem" href="#graduate">Graduate</a>
+                    </li>
+                    <li role="none">
+                      <a role="menuitem" href="#professional-schools">Professional </a>
+                    </li>
+                  </ul>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#sign-up">Sign Up</a>
+                </li>
+                <li role="separator"></li>
+                <li role="none">
+                  <a role="menuitem" href="#visit">Visit</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#photo-tour">Photo Tour</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#connect">Connect</a>
+                </li>
+              </ul>
+            </li>
+            <li role="none">
+              <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="#academics">
+                Academics
+                <svg xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
+                 <polygon points="1 0, 11 0, 6 8"></polygon>
+                </svg>
+              </a>
+              <ul role="menu" id="sub-menu-academics" aria-label="Academics">
+                <li role="none">
+                  <a role="menuitem" href="#colleges-and-schools">Colleges &amp; Schools</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#programs-of-study">Programs of Study</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#honors-programs">Honors Programs</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#online-courses">Online Courses</a>
+                </li>
+                <li role="separator"></li>
+                <li role="none">
+                  <a role="menuitem" href="#course-explorer">Course Explorer</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#register-for-class">Register for Class</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#academic-calendar">Academic Calendar</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="#tanscripts">Transcripts</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        
+        <div class="main">
+          <section aria-labelledby="id-page-title">
+            <h1 id="id-page-title" class="page_title">NAV</h1>
+            <div class="content">
+              <p></p>
+            </div>
+          </section>
+        </div>
+        <div id="cov">
+            <button id="b1" class="glow-on-hover">LE CHAT</button></div>
+        <footer role="contentinfo">
+           footer information
+        </footer>
+       </div>
+       <div>
+        <h1>Les instruction</h1>
+        <div> selectioner le menu
+<img src="tab_key2 (1).png" alt="" class="in">
+
+
+</div>
+<div>
+    <img src="depositphotos_30325229-stock-illustration-keyboard-arrows.jpg" alt="" class="in">
+</div>
+       </div>
+          
+    
+</body>
+<script src="3.js"></script>
+<style>
+  img {
+      pointer-events: none;
+      /* doing this makes sure .elementFromPoint 
+      do not acquires the image cursor object */
+      position: absolute;
+  }
+  /* makes the cursor invisible */
+        
+  * {
+      cursor: none;
+  }
+</style>
+<script>
+var x, y;
+var px, py;
+px = py = 0;
+
+// Image of cursor
+var cursor = document.getElementById("cursor");
+  
+// Button 1
+var b1 = document.getElementById("b1");
+  
+// Button 2
+var b2 = document.getElementById("b2");
+  
+
+/* mutex is used to avoid multiple click event from
+firing at the same time due to different position
+of image cursor and actual cursor
+Using mutex avoid any conflicts if original cursor and
+image cursor are both on a clickable element
+This makes sure only 1 click event is triggered at a time*/
+    
+var mutex = false;
+  var test=true;
+
+/*
+The following event is selecting the element
+on the image cursor and fires click() on it.
+The following event is triggered only when mouse is pressed.
+*/
+window.addEventListener("mouseup", function(e) {
+  
+// gets the object on image cursor position
+var tmp = document.elementFromPoint(x + px, y + py);
+mutex = true;
+tmp.click();
+cursor.style.left = (px + x) + "px";
+cursor.style.top = (py + y) + "px";
+  
+})
+
+/* The following event listener moves the image pointer
+with respect to the actual mouse cursor
+The function is triggered every time mouse is moved */
+window.addEventListener("mousemove", function(e) {
+
+// Gets the x,y position of the mouse cursor
+  x = e.clientX;
+    y = e.clientY;
+
+    // sets the image cursor to new relative position
+         if(test){
+    cursor.style.left = (x) + "px";
+    cursor.style.top = (y) + "px";
+      }
+  });
+
+  /* The following function re-calculates px,py
+  with respect to new position
+  Clicking on b1 moves the pointer to b2
+  Clicking on b2 moves the pointer to b1 */
+
+  b1.onclick = function() {
+    cursor.style.left = (x) + "px";
+    cursor.style.top = (y+20) + "px";
+              test=false;
+
+
+  }
+
+  b2.onclick = function() {
+    if (mutex) {
+      mutex = false;
+      px = b1.offsetLeft - x;
+      py = b1.offsetTop - y;
+    }
+  }
+</script>
+
+</html>
